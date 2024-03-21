@@ -49,7 +49,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=947182507117636&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->-->-->
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -336,7 +336,7 @@ Listen to what some of my students are saying about this business...
     const headerTop = header.getBoundingClientRect().top;
     if (window.scrollY > headerTop) {
       header.classList.add(stickyClass);
-      header.style.backgroundColor = '#113247'; // Replace with desired color
+      header.style.backgroundColor = '#ff0000'; // Replace with desired color
       header.innerHTML = `<div class="flex justify-center align-center">
                     
                     <div class="flex text-center md:mx-auto">
@@ -347,6 +347,7 @@ Listen to what some of my students are saying about this business...
                     </div>`; // Replace with new HTML content
     } else {
       header.classList.remove(stickyClass);
+      header.style.backgroundColor = '#113247';
       //header.style.backgroundColor = ''; // Reset to original color
       header.innerHTML = `<div class="flex justify-center align-center">
                     
